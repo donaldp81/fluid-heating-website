@@ -1,14 +1,14 @@
 :root {
   --primary: #2e7d32;
   --primary-dark: #1f5f25;
-  --slate-900: #1f2937;
-  --slate-700: #374151;
-  --slate-500: #6b7280;
-  --surface: #f4f6f8;
-  --white: #ffffff;
-  --line: #dce3e8;
+  --slate-900: #f5f7fa;
+  --slate-700: #d1d5db;
+  --slate-500: #9ca3af;
+  --surface: #1a1a1a;
+  --white: #2d2d2d;
+  --line: #3f3f46;
   --radius: 14px;
-  --shadow: 0 14px 34px rgba(17, 24, 39, 0.08);
+  --shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
 }
 
 *,
@@ -26,7 +26,7 @@ body {
 body {
   font-family: "Inter", Arial, sans-serif;
   color: var(--slate-700);
-  background: var(--white);
+  background: var(--surface);
   line-height: 1.6;
 }
 
@@ -50,7 +50,7 @@ a:hover {
 }
 
 .emergency-banner {
-  background: linear-gradient(90deg, #0f172a, #1e293b);
+  background: linear-gradient(90deg, #151515, #232323);
   color: #f8fafc;
   padding: 0.6rem 0;
 }
@@ -68,7 +68,7 @@ a:hover {
 }
 
 .site-header {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(26, 26, 26, 0.94);
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .header-nav a {
-  color: var(--slate-700);
+  color: #e5e7eb;
   font-weight: 600;
 }
 
@@ -111,8 +111,8 @@ a:hover {
 }
 
 .hero {
-  padding: 3rem 0 2.4rem;
-  background: linear-gradient(180deg, #edf7ef 0%, #ffffff 70%);
+  padding: 2.1rem 0 1.35rem;
+  background: linear-gradient(180deg, #202020 0%, #1a1a1a 72%);
 }
 
 .hero-grid {
@@ -155,11 +155,11 @@ h3 {
 .hero-copy,
 .section-intro {
   max-width: 67ch;
-  color: #334155;
+  color: #cbd5e1;
 }
 
 .hero-copy {
-  margin: 0 0 0.95rem;
+  margin: 0 0 0.7rem;
 }
 
 .service-area {
@@ -173,6 +173,7 @@ h3 {
   align-items: center;
   gap: 0.45rem;
   font-weight: 600;
+  color: #f3f4f6;
 }
 
 .stars {
@@ -223,18 +224,18 @@ h3 {
 }
 
 .btn-secondary {
-  border-color: var(--slate-900);
-  color: var(--slate-900);
+  border-color: #a3a3a3;
+  color: #f5f5f5;
   background: transparent;
 }
 
 .btn-secondary:hover {
-  background: #f1f5f9;
+  background: #3a3a3a;
 }
 
 .btn-light {
-  background: #f8fafc;
-  color: #0f172a;
+  background: #f3f4f6;
+  color: #111827;
 }
 
 .btn-small {
@@ -243,7 +244,7 @@ h3 {
 }
 
 .trust-panel {
-  background: var(--white);
+  background: #2d2d2d;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.15rem;
@@ -259,12 +260,13 @@ h3 {
 }
 
 .trust-list li {
-  border: 1px solid #d8e6d8;
+  border: 1px solid #3f5d42;
   border-left: 4px solid var(--primary);
-  background: #f6fbf6;
+  background: #1f2a1f;
   border-radius: 10px;
   padding: 0.5rem 0.7rem;
   font-size: 0.93rem;
+  color: #f1f5f9;
 }
 
 .badge-row {
@@ -274,8 +276,9 @@ h3 {
 }
 
 .cert-badge {
-  background: #e7f3e8;
-  color: #155724;
+  background: #1f3d22;
+  color: #d3f6d7;
+  border: 1px solid #3f6c43;
   border-radius: 999px;
   padding: 0.3rem 0.62rem;
   font-size: 0.82rem;
@@ -287,11 +290,11 @@ h3 {
 }
 
 .section-alt {
-  background: var(--surface);
+  background: #222;
 }
 
 .section-process {
-  background: #f8fafc;
+  background: #242424;
 }
 
 .process-grid {
@@ -303,9 +306,9 @@ h3 {
 .process-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #fff;
+  background: #2d2d2d;
   padding: 1rem;
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
   transition: transform 0.2s ease;
 }
 
@@ -335,10 +338,10 @@ h3 {
 
 .card {
   border: 1px solid var(--line);
-  background: #fff;
+  background: #2d2d2d;
   border-radius: var(--radius);
   padding: 1rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -354,8 +357,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #e8f3e8;
-  color: var(--primary-dark);
+  background: #1f3d22;
+  color: #b8f0be;
   font-weight: 800;
   font-size: 0.78rem;
   margin-bottom: 0.55rem;
@@ -375,9 +378,9 @@ h3 {
 .why-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #fff;
+  background: #2d2d2d;
   padding: 1rem;
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24);
 }
 
 .qualifications {
@@ -390,9 +393,9 @@ h3 {
 
 .qualifications li {
   padding: 0.45rem 0.62rem;
-  border: 1px solid #d9e0e6;
+  border: 1px solid #40454d;
   border-radius: 9px;
-  background: #fff;
+  background: #242424;
 }
 
 .testimonials-grid {
@@ -404,9 +407,9 @@ h3 {
 .testimonial-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #fff;
+  background: #2d2d2d;
   padding: 1rem;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
 }
 
 .testimonial-card p {
@@ -419,7 +422,7 @@ h3 {
 }
 
 .section-callback {
-  background: linear-gradient(180deg, #f7fbf8 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #232323 0%, #1a1a1a 100%);
 }
 
 .contact-grid {
@@ -428,11 +431,11 @@ h3 {
 }
 
 .contact-form {
-  background: #fff;
+  background: #2d2d2d;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1rem;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
 }
 
 .contact-form label {
@@ -443,7 +446,9 @@ h3 {
 
 .contact-form input {
   width: 100%;
-  border: 1px solid #cfd8df;
+  border: 1px solid #4b5563;
+  background: #1f1f1f;
+  color: #f5f7fa;
   border-radius: 8px;
   padding: 0.65rem 0.75rem;
   font: inherit;
@@ -456,7 +461,7 @@ h3 {
 }
 
 .site-footer {
-  background: #111827;
+  background: #141414;
   color: #e5e7eb;
   padding: 1.35rem 0;
 }
@@ -474,6 +479,34 @@ h3 {
 
 .site-footer a {
   color: #c2f0c8;
+}
+
+.section p,
+.card p,
+.process-card p,
+.why-card p,
+.testimonial-card p,
+.contact-form p {
+  color: #d1d5db;
+}
+
+.contact-form a,
+.learn-link {
+  color: #86efac;
+}
+
+@media (min-width: 980px) {
+  .hero {
+    padding: 1.45rem 0 0.95rem;
+  }
+
+  h1 {
+    margin-bottom: 0.65rem;
+  }
+
+  .hero-actions {
+    margin: 0.72rem 0 0.45rem;
+  }
 }
 
 @media (max-width: 760px) {
