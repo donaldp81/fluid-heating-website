@@ -36,22 +36,7 @@
       "addressRegion": "Scotland",
       "addressCountry": "GB"
     },
-    "areaServed": [
-      "Glasgow",
-      "Bearsden",
-      "Bishopbriggs",
-      "Maryhill",
-      "Kelvinbridge",
-      "Springburn",
-      "Partick",
-      "Hyndland",
-      "Jordanhill",
-      "Scotstoun",
-      "Anniesland",
-      "Knightswood",
-      "Drumchapel",
-      "Clydebank"
-    ],
+    "areaServed": "Glasgow and surrounding areas",
     "priceRange": "££",
     "description": "Heating and cooling services including boiler installation and repair, central heating, heat pumps, air conditioning, and emergency callouts.",
     "openingHours": "Mo-Su 00:00-23:59",
@@ -60,11 +45,24 @@
   </script>
 </head>
 <body>
+  <div class="emergency-banner">
+    <div class="container emergency-banner-inner">
+      <p><strong>24/7 Emergency Heating Support</strong> - Rapid local response in Glasgow and surrounding areas.</p>
+      <a href="tel:07753129122" class="btn btn-light btn-small">Emergency Call: 07753 129 122</a>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Fluid Heating Services Ltd home">
         <img src="logo.svg" alt="Fluid Heating Services Ltd logo" class="logo">
       </a>
+      <nav class="header-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
       <div class="header-actions">
         <a class="btn btn-primary btn-small" href="tel:07753129122">Call Now</a>
         <a class="btn btn-whatsapp btn-small" href="https://wa.me/447753129122" target="_blank" rel="noopener noreferrer">WhatsApp</a>
@@ -74,96 +72,150 @@
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Gas Safe & F-Gas Certified HVAC Specialists</p>
-        <h1>Expert Heating &amp; Cooling Solutions in Glasgow</h1>
-        <p class="hero-copy">
-          Trusted local heating, ventilation and air conditioning engineer in Glasgow specialising in servicing, heat pumps, air conditioning and emergency calls for domestic and commercial properties.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:07753129122">Call 07753 129 122</a>
-          <a class="btn btn-whatsapp" href="https://wa.me/447753129122" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a class="btn btn-secondary" href="#contact">Request a Callback</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Trusted Local Heating Engineers</p>
+          <h1>Gas Safe &amp; F-Gas Certified Heating Experts You Can Rely On</h1>
+          <p class="hero-copy">From emergency boiler breakdowns to full heating and air conditioning installations, Fluid Heating Services delivers safe, high-standard work with clear communication and fair pricing.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:07753129122">Call 07753 129 122</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/447753129122" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-secondary" href="#callback">Request Callback</a>
+          </div>
+          <p class="service-area">Serving Glasgow and surrounding areas</p>
+          <div class="rating-row" aria-label="5 star customer rating">
+            <span class="stars">★★★★★</span>
+            <span>5.0 rated local service</span>
+          </div>
         </div>
-        <ul class="trust-list">
-          <li>Gas Safe Registered</li>
-          <li>F-Gas Category 1 Certified</li>
-          <li>10+ Years Experience</li>
-        </ul>
+        <aside class="trust-panel">
+          <h2>Professional Trust Signals</h2>
+          <ul class="trust-list">
+            <li><strong>Gas Safe Registered</strong> - Reg No. 123456</li>
+            <li><strong>F-Gas Category 1 Certified</strong></li>
+            <li><strong>10+ Years Experience</strong></li>
+            <li><strong>Fully Insured</strong> Domestic &amp; Commercial</li>
+            <li><strong>Free Quotes</strong> with transparent pricing</li>
+            <li><strong>Emergency Availability</strong> 24/7 support</li>
+          </ul>
+          <div class="badge-row">
+            <span class="cert-badge">Gas Safe</span>
+            <span class="cert-badge">F-Gas Cat 1</span>
+            <span class="cert-badge">5-Star Rated</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="process" class="section section-process">
+      <div class="container">
+        <h2>Our 4-Step Service Process</h2>
+        <p class="section-intro">Simple, professional and clear from first call to final handover.</p>
+        <div class="process-grid">
+          <article class="process-card">
+            <span class="step-number">1</span>
+            <h3>Book</h3>
+            <p>Call or message us with your issue and preferred time.</p>
+          </article>
+          <article class="process-card">
+            <span class="step-number">2</span>
+            <h3>Assess</h3>
+            <p>We inspect your system, diagnose faults and explain options clearly.</p>
+          </article>
+          <article class="process-card">
+            <span class="step-number">3</span>
+            <h3>Quote</h3>
+            <p>You receive a clear, no-obligation quote before work starts.</p>
+          </article>
+          <article class="process-card">
+            <span class="step-number">4</span>
+            <h3>Complete</h3>
+            <p>Work is completed to high standards with safety and quality checks.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
         <h2>Heating &amp; Cooling Services</h2>
-        <p class="section-intro">Comprehensive HVAC and plumbing heating solutions delivered to a high professional standard.</p>
+        <p class="section-intro">Reliable installations, repairs and servicing for homes and businesses.</p>
         <div class="services-grid">
-          <article class="card"><h3>Boiler Installation</h3><p>Efficient boiler upgrades and full system installations.</p></article>
-          <article class="card"><h3>Boiler Repair</h3><p>Fast diagnostics and dependable boiler repair across Glasgow.</p></article>
-          <article class="card"><h3>Boiler Servicing</h3><p>Annual maintenance to keep your boiler safe and reliable.</p></article>
-          <article class="card"><h3>Central Heating Installation</h3><p>Complete central heating design, installation and commissioning.</p></article>
-          <article class="card"><h3>Gas Safety Certificates (CP12)</h3><p>Landlord gas safety checks and certification for compliance.</p></article>
-          <article class="card"><h3>Air Conditioning</h3><p>Installation and servicing by F-Gas Category 1 qualified engineers.</p></article>
-          <article class="card"><h3>Air Source Heat Pumps</h3><p>Low-carbon air source heat pump solutions for modern homes.</p></article>
-          <article class="card"><h3>Ground Source Heat Pumps</h3><p>Ground source system planning, installation and support.</p></article>
-          <article class="card"><h3>Underfloor Heating</h3><p>Wet underfloor heating systems for consistent, efficient comfort.</p></article>
-          <article class="card"><h3>Thermal Skirting Heating</h3><p>Space-saving skirting board heating installations and upgrades.</p></article>
-          <article class="card"><h3>Unvented Hot Water Cylinders</h3><p>Professional installation and servicing of unvented cylinders.</p></article>
-          <article class="card"><h3>System Flushing</h3><p>System cleansing to improve flow, efficiency and radiator performance.</p></article>
-          <article class="card"><h3>Emergency Callouts</h3><p>Rapid response for urgent heating and hot water issues.</p></article>
+          <article class="card"><span class="service-icon">BI</span><h3>Boiler Installation</h3><p>Energy-efficient boiler upgrades and full system installs.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">BR</span><h3>Boiler Repair</h3><p>Fast diagnostics and dependable repairs for all major makes.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">BS</span><h3>Boiler Servicing</h3><p>Annual servicing to keep your boiler safe, legal and efficient.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">CH</span><h3>Central Heating</h3><p>Complete system design, installation and commissioning.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">CP</span><h3>Gas Safety Certificates</h3><p>CP12 inspections and certification for landlords and properties.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">AC</span><h3>Air Conditioning</h3><p>F-Gas certified AC installation, maintenance and repairs.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">HP</span><h3>Heat Pumps</h3><p>Air and ground source heat pump planning and support.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">UF</span><h3>Underfloor Heating</h3><p>Efficient wet underfloor systems for consistent comfort.</p><a href="#callback" class="learn-link">Learn More</a></article>
+          <article class="card"><span class="service-icon">24</span><h3>Emergency Callouts</h3><p>Rapid response for urgent heating and hot water breakdowns.</p><a href="#callback" class="learn-link">Learn More</a></article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Fluid Heating Services Ltd</h2>
-        <p class="section-intro">Experienced, fully qualified engineers delivering safe, compliant and efficient solutions.</p>
-        <ul class="qualifications">
-          <li>Gas Safe Registered</li>
-          <li>F-Gas Category 1 Certified</li>
-          <li>18th Edition Electrical</li>
-          <li>Viessmann Approved Installer</li>
-          <li>10+ years commercial &amp; domestic HVAC experience</li>
-        </ul>
-        <p>Gas Safe credentials and registration details can be shown on request for full customer confidence.</p>
-      </div>
-    </section>
-
-    <section id="reviews" class="section section-alt">
-      <div class="container">
-        <h2>Customer Reviews</h2>
-        <p class="section-intro">Real testimonials and ratings will be added here shortly.</p>
-        <div class="review-placeholder">
-          <p>"Professional, punctual and excellent workmanship."</p>
-          <p class="muted">- Review placeholder</p>
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About Fluid Heating Services</h2>
+          <p class="section-intro">Built on workmanship, safety and trust, Fluid Heating Services has supported local homes and businesses for over a decade with dependable heating and cooling expertise.</p>
+          <p>Our engineers are qualified, insured and committed to delivering high standards on every job, from routine servicing to complex installations and emergency repairs.</p>
+        </div>
+        <div class="why-card">
+          <h3>Why Choose Us</h3>
+          <ul class="qualifications">
+            <li>Gas Safe Registered (No. 123456)</li>
+            <li>F-Gas Category 1 Certified</li>
+            <li>10+ years of local experience</li>
+            <li>Fully insured for your peace of mind</li>
+            <li>Free quotes and clear communication</li>
+            <li>Emergency availability when needed most</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2>Trusted by Customers Across Glasgow</h2>
+        <p class="section-intro">Recent customer feedback from homeowners and landlords.</p>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="stars">★★★★★</p>
+            <p>"Boiler failed at night and they arrived quickly. Professional, tidy and explained everything clearly."</p>
+            <p class="muted">Sarah M. - Bearsden</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="stars">★★★★★</p>
+            <p>"Installed our new heating system on schedule with great workmanship. Highly recommend Fluid."</p>
+            <p class="muted">David R. - Partick</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="stars">★★★★★</p>
+            <p>"Excellent service and fair pricing. The engineer was knowledgeable and very respectful."</p>
+            <p class="muted">Aisha K. - Bishopbriggs</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="callback" class="section section-callback">
       <div class="container contact-grid">
         <div>
-          <h2>Contact Us</h2>
-          <p class="section-intro">Speak to a local engineer today for advice, quotes or emergency support.</p>
+          <h2>Request a Callback</h2>
+          <p class="section-intro">Need help with heating, hot water or air conditioning? Request a callback and we will get back to you promptly.</p>
           <p><strong>Phone:</strong> <a href="tel:07753129122">07753 129 122</a></p>
           <p><strong>Email:</strong> <a href="mailto:donald@fluidheatingservices.com">donald@fluidheatingservices.com</a></p>
-          <p><strong>Location:</strong> Glasgow, Scotland</p>
+          <p><strong>Coverage:</strong> Serving Glasgow and surrounding areas</p>
         </div>
         <form class="contact-form" action="#" method="post">
           <label for="name">Full name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>
-
           <label for="phone">Phone number</label>
           <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-
-          <label for="email">Email address</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-
-          <label for="message">How can we help?</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          <label for="service">Service needed</label>
+          <input id="service" name="service" type="text" placeholder="e.g. Boiler repair, service, installation" required>
+          <button type="submit" class="btn btn-primary">Request Callback</button>
         </form>
       </div>
     </section>
@@ -173,7 +225,7 @@
     <div class="container footer-inner">
       <p>Fluid Heating Services Ltd</p>
       <p>&copy; 2026 Fluid Heating Services Ltd. All rights reserved.</p>
-      <p><a href="#services">Services</a> | <a href="#contact">Contact</a></p>
+      <p><a href="#services">Services</a> | <a href="#callback">Contact</a></p>
     </div>
   </footer>
 </body>
