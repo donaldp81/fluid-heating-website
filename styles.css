@@ -63,6 +63,13 @@ a:hover {
   padding: 0.75rem 0;
 }
 
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
 .logo {
   width: 210px;
   height: auto;
@@ -145,6 +152,15 @@ h3 {
 
 .btn-primary:hover {
   background: #246a2a;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #1ea952;
 }
 
 .btn-secondary {
@@ -293,6 +309,16 @@ h3 {
 
 .site-footer a {
   color: #d4f0d6;
+}
+
+@media (max-width: 560px) {
+  .logo {
+    width: 175px;
+  }
+
+  .header-actions .btn-small {
+    min-width: 110px;
+  }
 }
 
 @media (min-width: 640px) {
